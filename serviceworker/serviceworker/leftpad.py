@@ -25,6 +25,3 @@ def left_pad(input, length, fill_character=' '):
     """
 
     return str(input).rjust(length, str(fill_character))
-
-if __name__ == '__main__':
-    print 'Installed Successfully!'

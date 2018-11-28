@@ -10,7 +10,7 @@ requires = []
 message_extractors = {},
 
 setup(name='serviceworker',
-      version='1.0.1',
+      version='1.0.4',
       description='serviceworker',
       long_description=README,
       classifiers=[],
@@ -23,5 +23,7 @@ setup(name='serviceworker',
       zip_safe=False,
       test_suite='serviceworker',
       install_requires=requires,
-      entry_points={'console_scripts': ['encrypt=api.main:run']},
+      entry_points={'console_scripts': [
+            #'encrypt=main:run'
+            ]},
       )
