@@ -10,7 +10,7 @@ requires = []
 message_extractors = {},
 
 setup(name='serviceworker',
-      version='1.0.4',
+      version='1.0.0',
       description='serviceworker',
       long_description=README,
       classifiers=[],
