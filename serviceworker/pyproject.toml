@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "serviceworker"
 version = "1.0.0.0"
@@ -12,3 +16,31 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+
+# Required dependencies for your package
+dependencies = [
+    "requests",  # Example dependency
+    "numpy",     # Example dependency
+    "pandas"     # Example dependency
+]
+
+# Optional dependencies categorized
+[project.optional-dependencies]
+dev = [
+    "pytest",          # Testing framework
+    "pytest-cov",     # Coverage reporting
+    "black",           # Code formatter
+    "flake8",          # Code linter
+]
+docs = [
+    "sphinx",          # Documentation generation
+    "sphinx-rtd-theme" # Read the Docs theme
+]
+# Add more optional dependencies as needed
+# For example:
+# extra_feature = ["some_package"]
+
+# Pytest configuration (optional)
+[tool.pytest]
+testpaths = ["tests"]  # Specify the directory where your tests are located
+addopts = "--maxfail=1 --disable-warnings -q"  # Optional: pytest command line options

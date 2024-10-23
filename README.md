@@ -1,8 +1,12 @@
 # ServiceWorker
 https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
-py -m pip install --upgrade pip
-py -m pip install --upgrade build
-py -m build
-py -m pip install --upgrade twine
-py -m twine upload --repository ServiceWorker dist/*
+python -m pip install --upgrade pip
+python -m pip install --upgrade build
+python -m build
+python -m pip install --upgrade twine
+
+python -m twine upload --repository ServiceWorker dist/*
+
+python -m twine upload dist/*
+enter api key 
