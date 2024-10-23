@@ -1,0 +1,18 @@
+[project]
+name = "serviceworker"
+version = "1.0.0"
+authors = [
+  { name="hemanjosko", email="thehimanshuone@gmail.com" },
+]
+description = ""
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = ""
+Issues = ""
